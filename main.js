@@ -1,15 +1,22 @@
 let counter = document.getElementById("count");
 let clicker = document.getElementById("click");
-let amount = 0; 
+let reset = document.getElementById("reset");
+let amount = parseInt(localStorage.getItem("coins")) || 0;
+counter.textContent = amount;
 
 function Add() {
     amount += 1;
-    counter.textContent = amount; 
-    clicker.classList.add("active");
+    counter.textContent = amount;
+    localStorage.setItem("coins", amount);
 
-    setTimeout(() => {
-        clicker.classList.remove("active");
-    }, 100);
-    }
+    clicker.classList.add("active");
+    setTimeout(() => clicker.classList.remove("active"), 100);
+}
+function ResetAll() {
+    amount = 0;
+    counter.textContent = amount;
+    localStorage.setItem("coins", amount);
+}
 
 clicker.addEventListener("click", Add);
+reset.addEventListener("click", ResetAll);

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>SlimeClicker|Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img.png">
+</head>
+<body>
+  <div class="Menu">  
+    <a href="index.html" class="menubutton">Main</a>
+    <a href="shop.html" class="menubutton">Shop</a>
+  </div>
+
+  <div class="Main">
+    <p>Shop🛍️</p>
+    <p>Coins: <span id="coins">0</span></p>
+  </div>
+
+  <script>
+    let coins = localStorage.getItem("coins") || 0;
+    document.getElementById("coins").textContent = coins;
+  </script>
+</body>
+</html>
