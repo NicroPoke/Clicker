@@ -1,6 +1,7 @@
 p {
     color: #e492e8;
     font-size: 50px;
+    font-family: "Schoolbell", cursive;
 }
 body {
     background-color: #2a2b30;
@@ -14,6 +15,17 @@ body {
     align-items: center; 
     height: 650px; 
 }
+.ShopMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;         
+    color: #e492e8;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Schoolbell", cursive;
+}
+
 .Menu {
     display: flex;
     gap: 10px;
@@ -30,6 +42,7 @@ body {
     border: none; 
     background-size: cover;
     background-position: center;
+    font-family: "Schoolbell", cursive;
 }
 .menubutton {
     height: 50px;
@@ -42,7 +55,7 @@ body {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    font-family: sans-serif;
+    font-family: "Schoolbell", cursive;
     font-size: 16px;
     transition: 0.2s;
 }
@@ -63,7 +76,18 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: 0.2s;
+    font-family: "Schoolbell", cursive;
 }
 .resetbutton:hover {
     transform: scale(1.1); 
 }
+.coins-display {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #e492e8;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Schoolbell", cursive;
+}
+
