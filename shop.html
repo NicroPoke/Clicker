@@ -13,14 +13,12 @@
     <a href="index.html" class="menubutton"><strong>Main</strong></a>
     <a href="shop.html" class="menubutton"><strong>Shop</strong></a>
   </div>
-
   <div class="coins-display">
     Coins: <span id="coins">0</span>
   </div>
   <div class="ShopMain">
     <p><strong>Shop</strong></p>
   </div>
-
   <script>
     let coins = localStorage.getItem("coins") || 0;
     document.getElementById("coins").textContent = coins;
