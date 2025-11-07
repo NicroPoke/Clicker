@@ -1,28 +1,45 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SlimeClicker|Shop</title>
+  <title>SlimeClicker | Shop</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="img.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="Menu">  
     <a href="index.html" class="menubutton"><strong>Main</strong></a>
     <a href="shop.html" class="menubutton"><strong>Shop</strong></a>
   </div>
+
   <div class="coins-display">
-    Coins: <span id="count">0</span>
+    Plorts: <span id="count">0</span>
   </div>
+
   <div class="ShopMain">
     <p><strong>Shop</strong></p>
-    <button class="shop-button" id="upgradebutton">Upgrade click +1</button>
-    <br>
-    <button class="shop-button" id="autoclick">Dervish Slime</button>
-    <img src="dervishslime.png" alt="Dervish Slime" class="shop-image" id="shop-image">
+
+    <div class="shop-item">
+      <img src="img.png" alt="Upgrade Click" class="shop-image">
+      <button class="shop-button" id="upgradebutton">Plort Upgrade</button>
+    </div>
+
+    <div class="shop-item">
+      <img src="dervishslime.png" alt="Dervish Slime" class="shop-image">
+      <button class="shop-button" id="autoclick">Dervish Slime</button>
+    </div>
   </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <p id="modal-text"></p>
+      <div class="modal-buttons">
+        <button class="modal-button" id="modal-yes">OK</button>
+      </div>
+    </div>
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>

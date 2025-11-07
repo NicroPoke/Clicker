@@ -1,12 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SlimeClicker|Main</title>
+  <title>SlimeClicker | Main</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="img.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="Menu">  
@@ -14,10 +13,24 @@
     <a href="shop.html" class="menubutton"><strong>Shop</strong></a>
   </div>
 
-  <div class="Main"> 
-    <p class="counter" id="count"><strong>0</strong></p>
+  <div class="coins-display">
+    Plorts: <span id="count">0</span>
+  </div>
+
+  <div class="Main">
+    <p class="game-title">Slime Clicker</p>
     <button type="button" class="clicker" id="click"></button>
     <button type="button" class="resetbutton" id="reset"><strong>Reset</strong></button>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <p id="modal-text"></p>
+      <div class="modal-buttons">
+        <button class="modal-button" id="modal-yes">Yes</button>
+        <button class="modal-button" id="modal-no">No</button>
+      </div>
+    </div>
   </div>
 
   <script src="main.js"></script>
