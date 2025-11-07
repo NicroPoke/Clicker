@@ -59,6 +59,21 @@ body {
     font-size: 16px;
     transition: 0.2s;
 }
+
+.shop-button {
+    height: 50px;
+    width: 150px;
+    background-color: #424549;
+    color: #e492e8;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Schoolbell", cursive;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
 .menubutton:hover {
     transform: scale(1.1); 
 }

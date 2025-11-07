@@ -18,7 +18,9 @@
   </div>
   <div class="ShopMain">
     <p><strong>Shop</strong></p>
+    <button class="shop-button" onclick="upgrade()">upgrade click +1</button>
   </div>
+  <script src="main.js"></script>
   <script>
     let coins = localStorage.getItem("coins") || 0;
     document.getElementById("coins").textContent = coins;
