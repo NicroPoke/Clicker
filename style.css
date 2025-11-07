@@ -18,8 +18,8 @@ body {
 .ShopMain {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;         
+    justify-content: space-around;
+    align-items: center;        
     color: #e492e8;
     font-size: 50px;
     font-weight: bold;
@@ -72,8 +72,14 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-
+.shop-button:hover{
+    transform: scale(1.1);
+}
+.shop-image {
+    width: 100px;
+    height: 100px;
+    
+}
 .menubutton:hover {
     transform: scale(1.1); 
 }

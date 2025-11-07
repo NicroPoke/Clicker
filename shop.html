@@ -14,16 +14,15 @@
     <a href="shop.html" class="menubutton"><strong>Shop</strong></a>
   </div>
   <div class="coins-display">
-    Coins: <span id="coins">0</span>
+    Coins: <span id="count">0</span>
   </div>
   <div class="ShopMain">
     <p><strong>Shop</strong></p>
-    <button class="shop-button" onclick="upgrade()">upgrade click +1</button>
+    <button class="shop-button" id="upgradebutton">Upgrade click +1</button>
+    <br>
+    <button class="shop-button" id="autoclick">Dervish Slime</button>
+    <img src="dervishslime.png" alt="Dervish Slime" class="shop-image" id="shop-image">
   </div>
   <script src="main.js"></script>
-  <script>
-    let coins = localStorage.getItem("coins") || 0;
-    document.getElementById("coins").textContent = coins;
-  </script>
 </body>
 </html>
