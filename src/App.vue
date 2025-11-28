@@ -5,10 +5,12 @@
       @open-shop="showShop = !showShop"
     />
 
-    <h1>Slime Clicker</h1>
-    <h3>{{ plorts }}</h3>
+    <Clicker
+      :plorts="plorts"
+      :clickPower="clickPower"
+      @add-plorts="addPlorts"
+    />
 
-    <button @click="addPlorts" class="clicker"></button>
     <ShopMini 
       :visible="showShop"
       @upgrade="upgradeClickPower"
@@ -31,6 +33,7 @@
 
 <script>
 import Hotbar from "./components/Hotbar.vue";
+import Clicker from "./components/Clicker.vue";
 import ShopMini from "./components/ShopMini.vue";
 import GameModal from "./components/Modal.vue";
 import FlyingSlime from "./components/FlyingSlime.vue";
@@ -38,6 +41,7 @@ import FlyingSlime from "./components/FlyingSlime.vue";
 export default {
   components: {
     Hotbar,
+    Clicker,
     ShopMini,
     GameModal,
     FlyingSlime
@@ -129,43 +133,5 @@ export default {
 .wrapper {
   background-color: #2a2b30;
   min-height: 100vh;
-}
-
-h1 {
-  font-family: "Schoolbell", cursive;
-  color: #e492e8;
-  font-weight: bold;
-  font-size: 64px;
-  text-align: center;
-  margin: 0;
-  text-shadow: 0 0 15px #663881;
-}
-
-h3 {
-  color: #d6b8ff;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 32px;
-  margin: 10px 0 20px 0;
-  text-shadow: 0 0 10px #b384e6;
-}
-
-.clicker {
-  display: block;
-  margin: 0 auto;
-  height: 260px;
-  width: 260px;
-  background: transparent;
-  background-image: url('@/assets/img.png');
-  background-size: cover;
-  cursor: pointer;
-  transition: transform 0.15s ease, filter 0.2s ease;
-  border: none;
-  filter: drop-shadow(0 0 15px #663881);
-}
-
-.clicker:active {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 25px #663881);
 }
 </style>
